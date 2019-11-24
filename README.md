@@ -1,2 +1,6 @@
 # Competitive Repository
-Source code for Data Structure and Algorithm for learning by using C++ and some problemset's solution from any platform for competitive programming.
+A repository for learning data structure and algorithm.
+Written by using C++ programming language and using IDE Dev C++.
+Feel free to give any solutions and suggestions.
+For learning purpose only.
+For personal interest only.
