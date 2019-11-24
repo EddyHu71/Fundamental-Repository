@@ -8,10 +8,11 @@ main () {
 	for (int i=0;i<N;i++) {
 		cin>>a[i];
 	}
-	
+	//shell sort operation
 	for (int i=N/2;N>0;N/=2) {
-		for (int j = N;j<N;j++) {
-			
+		int temp = a[i];
+		while (int j > 0 && temp < a[j]) {
+			j--;
 		}
 	}
 }
