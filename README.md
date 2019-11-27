@@ -8,3 +8,9 @@ Feel free to give any solutions and suggestions.
 For learning purpose only.
 
 For personal interest only.
+
+References from:
+1. [HackerRank](http://hackerrank.com/)
+1. [Hackerearth](http://hackerearth.com/)
+1. [Codeforces](http://codeforces.com)
+1. [AtCoder](http://atocder.jp)
