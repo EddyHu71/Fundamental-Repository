@@ -1,4 +1,4 @@
-# Competitive Repository
+# Fundamental Repository and Competitive Solution Problemset
 A repository for learning data structure, basic algorithms, advanced algorithms and cryptography.
 
 Written by using C++ programming language and using IDE Dev C++.
