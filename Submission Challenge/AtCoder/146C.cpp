@@ -7,7 +7,7 @@ using namespace std;
 using ll = long long;
 const ll MOD = 1e9 + 7;
 const ll INF = 1e18;
- 
+ //https://atcoder.jp/contests/abc146/tasks/abc146_c
 int main() {
     ll n, m, i, j, k;
     ll a,b,x;
@@ -19,7 +19,6 @@ int main() {
         ten[i]=ten[i-1]*10;
     }
     for(i=1;i<=9;i++){
-        //??
         ll now = x-b*i;
         if(now>0 && now/a>0){
             ret = max(ret,min(ten[i]-1,now/a));
