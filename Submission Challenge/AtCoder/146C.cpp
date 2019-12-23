@@ -1,33 +1,19 @@
-#include <iostream>
+#include "bits/stdc++.h"
+#define hhh printf("hhh\n")
+#define see(x) (cerr<<(#x)<<'='<<(x)<<endl)
 using namespace std;
-#include <bits/stdc++.h>
+typedef long long ll;
+typedef pair<int,int> pr;
+inline int read() {int x=0,f=1;char c=getchar();while(c!='-'&&(c<'0'||c>'9'))c=getchar();if(c=='-')f=-1,c=getchar();while(c>='0'&&c<='9')x=x*10+c-'0',c=getchar();return f*x;}
  
-using namespace std;
+const int maxn = 3e5+7;
+const int inf = 0x3f3f3f3f;
+const int mod = 1e9+7;
  
-using ll = long long;
-const ll MOD = 1e9 + 7;
-const ll INF = 1e18;
- //https://atcoder.jp/contests/abc146/tasks/abc146_c
+ll gcd(ll a, ll b) { return !b?a:gcd(b,a%b); }
+ 
 int main() {
-    ll n, m, i, j, k;
-    ll a,b,x;
-    cin >> a >> b >> x;
-    ll ret = 0;
-    ll ten[11]={};
-    ten[0]=1;
-    for(i=1;i<11;i++){
-        ten[i]=ten[i-1]*10;
-    }
-    for(i=1;i<=9;i++){
-        ll now = x-b*i;
-        if(now>0 && now/a>0){
-            ret = max(ret,min(ten[i]-1,now/a));
-        }
-    }
-    ll now = x-b*10;
-    if(now>0 && now/a>0){
-        ret = max(ret,min(ten[9],now/a));
-    }
-    cout << ret << endl;
-    return 0;
+    ll a, b;
+    cin>>a>>b;
+    cout<<a*b/gcd(a,b)<<endl;
 }

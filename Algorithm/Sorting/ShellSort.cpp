@@ -9,10 +9,20 @@ main () {
 		cin>>a[i];
 	}
 	//shell sort operation
-	for (int i=N/2;N>0;N/=2) {
-		int temp = a[i];
-		while (int j > 0 && temp < a[j]) {
-			j--;
+	for (int i=N/2;i>0;i/=2) {
+		
+		for (int j=i;j<N;j++) {
+			
+			int temp = a[i];
+			
+			for (int k = j;k>=i && a[j-i] > temp;j -= i) {
+				a[j] = a[j-i];
+				a[j] = temp;
+			}
 		}
+	}
+	
+	for (int i=0;i<N;i++) {
+		cout<<a[i]<<" ";
 	}
 }
