@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
  
 using namespace std;
- 
+ //https://atcoder.jp/contests/abc151/tasks/abc151_c
 int main()
 {
     int n,k,m,tmp1;
