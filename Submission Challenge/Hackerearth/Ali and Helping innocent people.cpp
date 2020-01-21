@@ -1,21 +1,17 @@
 #include <iostream>
 using namespace std;
 main () {
-	int a, b, c, d, e, f, g;
-	bool valid1 = true, valid2 = true;
-	char y, z;
-	chars[10];
-	cin>>a>>b>>y>>c>>d>>e>>z>>f>>g;
-	if (y == 'A' || y == 'E' || y == 'I' || y == 'O' || y == 'U' || y == 'Y') {
-		valid1 = false;
-	} 
-	if ((a + b) % 2 != 0 && (d+e) % 2 != 0 && (f + g) % 2 != 0) {
-		valid2 = false;
-	}
-	
-	if (valid1 == true && valid2 == true) {
-		cout<<"Valid"<<endl;
+	char s[10];
+	cin>>s;
+	if (((s[0] + s[1]) % 2 != 0) && ((s[3] + s[4]) % 2 != 0) && ((s[4] + s[5]) % 2 != 0) && ((s[7] + s[8]) % 2 != 0)) {
+		if (s[2] =='A' || s[2] == 'E' || s[2] =='I' || s[2] == 'O' || s[2] =='U' || s[2] == 'Y') {
+			cout<<"Invalid";	
+		} else {
+			cout<<"Valid";
+		}
 	} else {
-		cout<<"Invalid"<<endl;
+		cout<<"Valid";
 	}
 }
+
+
