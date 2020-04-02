@@ -2,20 +2,20 @@
 using namespace std;
 
 int main () {
-	int hori = 0, vert = 0;
+	int x = 0, y = 0;
 	string s;
 	cin>>s;
 	for (int i=0;i<s.length();i++) {
 		if (s[i] == 'R') {
-			hori++;
+			x++;
 		} else if (s[i] == 'L') {
-			hori--;
+			x--;
 		} else if (s[i] == 'U') {
-			vert++;
+			y++;
 		} else if (s[i] == 'D') {
-			vert--;
+			y--;
 		}
 	}
-	cout<<vert<<" "<<hori<<endl;
+	cout<<x<<" "<<y<<endl;
 	return 0;
 }
