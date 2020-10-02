@@ -1,12 +1,12 @@
-#include<bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
-
 main () {
-	int n;
-	cin>>n;
-	int a;
-	for (int i=1;i<=a;i++) {
-		cout<<i<<endl;
+	int a[2];
+	for (int i=0;i<3;i++) {
+		cin>>a[i];
+	}
+	
+	for (int i=2;i>=0;i--) {
+		cout<<a[i]<<endl;
 	}
 }
